@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD  
+Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">  
+<struts>  
+  
+<package name="Login_jsp" extends="struts-default" namespace="/Login_jsp">  
+  
+<action name="loginAction" class="login_action.LoginAction" method="execute">  
+<result name="successEmployee">employeeWelcome.jsp</result>  
+<result name="successAdmin">admin_jsp.admin_css.jsp</result>  
+<result name="successSupport">admin_create_user.jsp</result> 
+<result name="successManager">admin_create_user.jsp</result> 
+<result name="errorActive">activeError.jsp</result>
+<result name="error">Error.jsp</result> 
+</action>
+
+<action name="logoutAction" class="login_action.LoginAction" method="logout">  
+<result name="success">Login.jsp</result>
+ </action>
+ 
+</package>
+  
+
+
+
+</struts>      

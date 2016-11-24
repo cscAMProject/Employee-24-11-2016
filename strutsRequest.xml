@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD  
+Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">  
+<struts> 
+ 
+<package name="Request_jsp" extends="struts-default" namespace="/Login_jsp"> 
+<action name="create_request" class="employee_action.CreateRequestAction">  
+<result name="success">employee_request.jsp</result>  
+<result name="error">employee_error.jsp</result>  
+  <result name="input">employee_create_request.jsp</result> 
+  
+</action>  
+  
+</package>  
+</struts>
